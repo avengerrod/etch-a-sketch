@@ -2,16 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Etch-A-Sketch</title>
   </head>
   <body>
     <h1>Etch A Sketch</h1>
+    <div id="size">
+      Height: <input type="text" id="row"> Width: <input type="text" id="column">
+      <button id="sizeButton">Change Size</button>
+    </div>
     <div id="box">
       <div id="grid"></div>
     </div>
-    <div></div>
+    <div id="drawChoice">
+      Color: <input type="color" id="colorPicker"> <button id="randomButton">Random</button> <button id="eraseButton">Erase</button> <button id="clearButton">Clear</button>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
